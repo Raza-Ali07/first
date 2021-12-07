@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Open Book</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngIf="catData">
+      <ion-title>{{catData.name}}</ion-title>
+    </ion-item>
+  </ion-list>
+</ion-content>

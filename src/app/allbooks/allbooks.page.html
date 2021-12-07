@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>allbooks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let cat of catData">
+      <ion-card [routerLink]="['/viewbook/' +cat.id]">
+        <ion-title >{{cat.name}}</ion-title>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

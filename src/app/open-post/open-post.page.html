@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>openPost</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card *ngIf="postView">
+  <ion-title>{{postView.title.rendered}}</ion-title>
+  <ion-title>{{postView.date}}</ion-title>
+<ion-note [innerHTML]="postView.content.rendered"></ion-note>
+
+</ion-card>
+</ion-content>
